@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+$font:'Comfortaa';
+
+.firstblock {
+    margin: -8px;
+    background-color: rgb(25, 77, 90);
+    padding: 20px;
+   
+    
+}
+.content_firstblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.block_title-list {
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-family: $font;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-left: 35px;
+    }
+}
+
+.list {
+    li{
+        color: rgb(255, 255, 255);
+        font-family: $font;
+        list-style-type: none;
+        padding-bottom: 10px;
+       
+    }
+    li:last-child{
+        padding-bottom: none;
+    }
+    li::before{
+        content: url(/img/icon.png);
+    }
+   
+}
+
+.block_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        border-radius: 10px;
+       
+    }
+
+}
+// Конец верстки первого блока
+.secondblock {
+    margin: 30px -8px 0px -8px ;
+}
+.content_secondblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.block_img {
+    img{
+        border-radius: 10px;
+    }
+}
+.title-p_block {
+    font-family: $font;
+    color:rgb(25, 71, 91);
+}
+// Конец верстки второго блока 
+
+.thirdblock {
+    margin: 60px 0px 0px 0px;
+}
+.title_thirsblock {
+    margin: auto 0px;
+    text-align: center;
+    font-family: $font;
+}
+.content_thirdblock {
+    max-width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.box1, .box2, .box3, .box4{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    .content_box{
+        font-family: $font;
+        margin: -10px 0px 10px 10px;
+       
+        h1{
+            text-align: center;
+            font-size: 25px;
+        }  
+    }
+}
+.box1_img, .box2_img, .box3_img, .box4_img{
+    img{
+        border-radius: 0px;
+    }
+}
+// Конец верстки третьего блока 
+.fourthblock {
+    margin-top: 100px;
+}
+.titlefourth_block {
+    text-align: center;
+    font-family: $font;
+    color: rgb(28, 68, 89);
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.content_fourthblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.column1, .column2, .column3 {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: rgb(28, 68, 89);
+}
+.title_column1,.title_column2,.title_column3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: $font;
+    font-size: 30px;
+    margin: 30px;
+}
+.card_column1,.card_column2 ,.card_column3 {
+    color: rgb(33, 92, 92);
+    text-align: center;
+    margin: 3px;
+    background-color: white;
+    font-family: $font;
+}
+.content_column1,.content_column2,.content_column3 {
+    color: white;
+    font-family: $font;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.button1,.button2, .button3{
+    margin: 0px auto;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    font-family: $font;
+    &:hover{
+        box-shadow: 0px 0px 100px 20px rgb(132, 90, 175);
+        color: rgb(132, 90, 175);
+      
+      
+    }
+}
+.block_forw1,.block_forw2,.block_forw3 {
+    margin: 0px auto;
+    padding-bottom: 20px;
+    
+}
+footer{
+    width: 100%;
+    margin: 0px -8px 0px -8px;
+    text-align: center;
+    font-family: $font;
+    color: gray;
+    font-size: 20px;
+}
+
+
+
+
